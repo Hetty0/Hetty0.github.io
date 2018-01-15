@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>My Blog</title>
+  <icon>https://www.gravatar.com/avatar/d4311f850d16621136d9fcdcca582286</icon>
+  <subtitle>thinking...</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://www.lhgcool.club/"/>
+  <updated>2018-01-11T02:11:40.000Z</updated>
+  <id>http://www.lhgcool.club/</id>
+  
+  <author>
+    <name>Alisa</name>
+    <email>mxhb01@126.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://www.lhgcool.club/2018/01/11/hello-world/"/>
+    <id>http://www.lhgcool.club/2018/01/11/hello-world/</id>
+    <published>2018-01-11T02:11:40.000Z</published>
+    <updated>2018-01-11T02:11:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关于angular material的一点东西</title>
+    <link href="http://www.lhgcool.club/2017/08/16/%E5%85%B3%E4%BA%8Eangular-material%E7%9A%84%E4%B8%80%E7%82%B9%E4%B8%9C%E8%A5%BF/"/>
+    <id>http://www.lhgcool.club/2017/08/16/关于angular-material的一点东西/</id>
+    <published>2017-08-16T09:44:46.000Z</published>
+    <updated>2018-01-11T02:11:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="md-select"><a href="#md-select" class="headerlink" title="md-select"></a>md-select</h3><p>当使用ng-repeat时，如果为一般数组时，可以使用一下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div ng-controller=&quot;MyCtrl&quot;&gt;</span><br><span class="line">  &lt;md-select ng-model=&quot;selectedUser&quot;&gt;</span><br><span class="line">    &lt;md-option ng-value=&quot;user&quot; ng-repeat=&quot;user in users&quot;&gt;&#123;&#123; user.name &#125;&#125;&lt;/md-option&gt;</span><br><span class="line">  &lt;/md-select&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p><p>如果数组里为对象时，就要添加ng-model-options属性。</p><pre><code>&lt;div ng-controller=&quot;MyCtrl&quot;&gt;    &lt;md-select ng-model=&quot;selectedUser&quot; ng-model-options=&quot;{trackBy: &apos;$value.id&apos;}&quot;&gt;        &lt;md-option ng-value=&quot;user&quot; ng-repeat=&quot;user in users&quot;&gt;{{ user.name }}&lt;/md-option&gt;    &lt;/md-select&gt;&lt;/div&gt;</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;md-select&quot;&gt;&lt;a href=&quot;#md-select&quot; class=&quot;headerlink&quot; title=&quot;md-select&quot;&gt;&lt;/a&gt;md-select&lt;/h3&gt;&lt;p&gt;当使用ng-repeat时，如果为一般数组时，可以使用一下代码：&lt;br&gt;&lt;figur
+      
+    
+    </summary>
+    
+    
+      <category term="angular-material" scheme="http://www.lhgcool.club/tags/angular-material/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于hexo如何修改博客主题</title>
+    <link href="http://www.lhgcool.club/2017/08/14/%E5%85%B3%E4%BA%8E%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/"/>
+    <id>http://www.lhgcool.club/2017/08/14/关于如何修改博客主题/</id>
+    <published>2017-08-14T11:43:11.000Z</published>
+    <updated>2018-01-11T02:11:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>hexo主题地址：<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a><br>hexo官网地址：<a href="https://hexo.io/" target="_blank" rel="noopener">https://hexo.io/</a><br>hexo git地址：<a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">https://github.com/hexojs/hexo</a></p><p><strong>个人感觉不错的主题：</strong></p><ul><li>Anisina <a href="http://haojen.github.io/" target="_blank" rel="noopener">http://haojen.github.io/</a></li><li>BlueLake <a href="http://chaoo.oschina.io/" target="_blank" rel="noopener">http://chaoo.oschina.io/</a></li><li>Chan <a href="http://blog.sprabbit.com/hexo-theme-chan/" target="_blank" rel="noopener">http://blog.sprabbit.com/hexo-theme-chan/</a></li><li>JSimple <a href="https://shuoit.net/" target="_blank" rel="noopener">https://shuoit.net/</a></li><li>hexo-theme-yilia <a href="http://litten.me/" target="_blank" rel="noopener">http://litten.me/</a></li></ul><h2 id="修改主题流程"><a href="#修改主题流程" class="headerlink" title="修改主题流程"></a>修改主题流程</h2><ul><li><code>进入hexo目录：$ cd hexo</code></li><li><code>下载你喜欢的主题：$ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</code></li><li><code>配置_config.yml中主题信息：theme: yilia</code></li><li><code>执行 $ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></li><li><code>执行 $ hexo server 就可以在本地服务器看到效果</code></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;hexo主题地址：&lt;a href=&quot;https://hexo.io/themes/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://hexo.io/themes/&lt;/a&gt;&lt;br&gt;hexo官网地址：&lt;a href=&quot;https://hexo.i
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://www.lhgcool.club/tags/hexo/"/>
+    
+      <category term="blog" scheme="http://www.lhgcool.club/tags/blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于markdown的语法简要规则</title>
+    <link href="http://www.lhgcool.club/2017/08/14/my-second-blog/"/>
+    <id>http://www.lhgcool.club/2017/08/14/my-second-blog/</id>
+    <published>2017-08-14T08:42:17.000Z</published>
+    <updated>2018-01-11T02:11:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><pre># 一级标题## 二级标题### 三级标题#### 四级标题##### 五级标题 ###### 六级标题 </pre><h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><h2 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h2><ul><li>1 </li><li>2</li><li>3</li></ul><h2 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h2><ol><li>1</li><li>2</li><li>3</li></ol><h2 id="定义型列表"><a href="#定义型列表" class="headerlink" title="定义型列表"></a>定义型列表</h2><p><code>名词和解释组成。一行写上定义，紧跟一行写上解释。解释的写法:紧跟一个缩进(Tab)</code><br>Markdown<br>:   轻量级文本标记语言。</p><h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><blockquote><p>这里是引用</p></blockquote><h2 id="插入链接"><a href="#插入链接" class="headerlink" title="插入链接"></a>插入链接</h2><p><a href="http://baidu.com" title="百度" target="_blank" rel="noopener">百度</a></p><h3 id="这里是多个链接"><a href="#这里是多个链接" class="headerlink" title="这里是多个链接"></a>这里是多个链接</h3><p>我经常去的几个网站<a href="http://www.google.com" title="Google" target="_blank" rel="noopener">Google</a>、<a href="http://www.leanote.com" title="Leanote" target="_blank" rel="noopener">Leanote</a>以及<a href="http://blog.leanote.com/freewalk" title="梵居闹市" target="_blank" rel="noopener">自己的博客</a><br><a href="http://www.leanote.com" title="Leanote" target="_blank" rel="noopener">Leanote 笔记</a>是一个不错的<a href="http://blog.leanote.com/freewalk" target="_blank" rel="noopener">网站</a>。</p><h3 id="自动链接：可识别邮箱和网址"><a href="#自动链接：可识别邮箱和网址" class="headerlink" title="自动链接：可识别邮箱和网址"></a>自动链接：可识别邮箱和网址</h3><p><a href="http://example.com/" target="_blank" rel="noopener">http://example.com/</a></p><h2 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h2><p><img src="http://mouapp.com/Mou_128.png" alt="Mou icon"></p><h1 id="锚点"><a href="#锚点" class="headerlink" title="锚点"></a>锚点</h1><p><code>锚点：markdown只支持在标题后插入锚点，其他地方无效</code><br><code>Leanote编辑器右侧显示效果区域暂时不支持锚点跳转，但发布成博文后是支持跳转的。</code></p><h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><p>这里是 <strong>粗体</strong>，<strong>粗体</strong><br>这里是 <em>斜体</em>，<em>斜体</em><br>这里是 <del>删除线</del></p><h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><table><thead><tr><th>tables</th><th style="text-align:center">Are</th><th style="text-align:right">cool</th></tr></thead><tbody><tr><td>col 3 is</td><td style="text-align:center">right-aligned</td><td style="text-align:right">$1600</td></tr><tr><td>col2 2 is</td><td style="text-align:center">centered</td><td style="text-align:right">$12</td></tr><tr><td>zebra stripes</td><td style="text-align:center">are neat</td><td style="text-align:right">$1</td></tr></tbody></table><h1 id="代码框"><a href="#代码框" class="headerlink" title="代码框"></a>代码框</h1><p><code>使用反引号包裹代码，按tab键可缩进</code></p><h1 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h1><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot; class=&quot;headerlink&quot; title=&quot;标题&quot;&gt;&lt;/a&gt;标题&lt;/h1&gt;&lt;pre&gt;
+# 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题 
+###### 六级标题 
+&lt;/pre&gt;
+
+
+      
+    
+    </summary>
+    
+    
+      <category term="markdown" scheme="http://www.lhgcool.club/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>my first blog</title>
+    <link href="http://www.lhgcool.club/2017/08/11/my-first-blog/"/>
+    <id>http://www.lhgcool.club/2017/08/11/my-first-blog/</id>
+    <published>2017-08-11T11:22:11.000Z</published>
+    <updated>2018-01-11T02:11:40.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
