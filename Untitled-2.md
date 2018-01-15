@@ -6,10 +6,10 @@
 title: My Blog  ## 定义网站的标题
 subtitle: thinking...  ## 定义网站的副标题
 description:  ## 定义网站的描述
-author: Alisa   ## 作者
+author: Alisa   ## 定义网站的负责人
 email: mxhb01@126.com
-language: zh-CN  ## 定义网站的语言，默认zh-Hans
-timezone: Asia/Shanghai    ## 定义网站的时区
+language:   ## 定义网站的语言，默认zh-Hans
+timezone:     ## 定义网站的时区
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -18,7 +18,7 @@ root: /   ## 定义所在Web文件夹在哪个目录下
 permalink: :year/:month/:day/:title/  ## 定义时间格式
 permalink_defaults:
 
-# Directory  ## 文件目录， 可不改
+# Directory
 source_dir: source  ## 定义从哪个文件夹获取博客资料
 public_dir: public  ## 定义生成静态网站到哪个文件夹
 tag_dir: tags
@@ -28,7 +28,7 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 
-# Writing ##静态页面生成属性，可不改
+# Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
@@ -74,12 +74,12 @@ jsonContent:
       tags: true
 
 
-# Category & Tag  ## 标签，可不改
+# Category & Tag
 default_category: uncategorized
 category_map:
 tag_map:
 
-# Date / Time format  ## 时间格式，可不改
+# Date / Time format
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
@@ -97,8 +97,7 @@ disqus_shortname:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-# yilia、material-flow
-theme: material-flow  ## 定义使用的主题
+theme: MaterialFlow  ## 定义使用的主题
 
 
 #sitemap
@@ -167,6 +166,3 @@ deploy:
 # 3. 配置两个_config.yml文件，一个在根目录下，一个在主题的根目录下。在_config.yml中配置主题为主题名称
 # 4. 重新部署项目：npm install hexo-deployer-git --save 
 # 5. 重新发布：$ hexo clean && hexo g && hexo d
-
-# hexo 相关文档
-# http://blog.csdn.net/superchao_5/article/details/51963942
