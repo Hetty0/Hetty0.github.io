@@ -1,7 +1,10 @@
 ---
 title: 关于angular material的一点东西
 date: 2017-08-16 17:44:46
-tags: angular-material
+tags: 
+  - angular-material
+categories: 
+  - 技术
 ---
 
 ### md-select

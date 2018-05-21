@@ -70,13 +70,14 @@ jsonContent:
       link: false
       permalink: false
       excerpt: false
-      categories: false
+      categories: true
       tags: true
 
 
 # Category & Tag  ## 标签，可不改
 default_category: uncategorized
 category_map:
+  技术: technology
 tag_map:
 
 # Archives

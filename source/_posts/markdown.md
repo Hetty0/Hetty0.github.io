@@ -1,7 +1,10 @@
 ---
 title: markdown
 date: 2018-05-21 11:47:43
-tags: markdown
+tags: 
+  - markdown
+categories: 
+  - 技术
 ---
 
 [TOC]
