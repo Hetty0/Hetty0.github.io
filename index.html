@@ -137,6 +137,135 @@
   <section class="meta">
     
     <h2 class="title">
+      <a href="/2018/05/21/markdown/">
+        markdown
+      </a>
+    </h2>
+    
+    <time>
+      5月 21, 2018
+    </time>
+		
+  </section>
+  <section class="article typo">
+	  <p>[TOC]</p>
+<p>最高阶标题<br>=</p>
+<p>第二阶标题<br>-</p>
+<h1 id="标题–第1阶"><a href="#标题–第1阶" class="headerlink" title="标题–第1阶"></a>标题–第1阶</h1><h2 id="标题–第2阶"><a href="#标题–第2阶" class="headerlink" title="标题–第2阶"></a>标题–第2阶</h2><h3 id="标题–第3阶"><a href="#标题–第3阶" class="headerlink" title="标题–第3阶"></a>标题–第3阶</h3><h4 id="标题–第4阶"><a href="#标题–第4阶" class="headerlink" title="标题–第4阶"></a>标题–第4阶</h4><h5 id="标题–第5阶"><a href="#标题–第5阶" class="headerlink" title="标题–第5阶"></a>标题–第5阶</h5><h6 id="标题–第6阶"><a href="#标题–第6阶" class="headerlink" title="标题–第6阶"></a>标题–第6阶</h6><h2 id="修辞和强调"><a href="#修辞和强调" class="headerlink" title="修辞和强调"></a>修辞和强调</h2><p>使用 <code>*</code>、<code>_</code> 作为标记，文字变成斜体<br>使用 <code>**</code>、<code>__</code> 作为标记，文字变成粗体<br>使用 <code>==</code> 在文字前后实现高亮效果<br>使用 <code>~~</code> 在文字前后添加删除线</p>
+<p><em>斜体</em>   <em>斜体</em><br><strong>强调</strong>   <strong>强调</strong><br><del>删除线</del><br>==text==</p>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>有序列表和无序列表</p>
+<h4 id="无序列表使用-、-、-作为列表项目的标志。"><a href="#无序列表使用-、-、-作为列表项目的标志。" class="headerlink" title="无序列表使用*、+、- 作为列表项目的标志。"></a>无序列表使用*、+、- 作为列表项目的标志。</h4><ul>
+<li>red</li>
+<li>green</li>
+<li>black</li>
+</ul>
+<ul>
+<li><p>good</p>
+<p>在一个列表项目中放多个段落，先插入一个空行，需要前面缩进4个空白或一个tab</p>
+</li>
+<li>better</li>
+<li>best</li>
+</ul>
+<ul>
+<li>big</li>
+<li>small</li>
+</ul>
+<h4 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h4><ol>
+<li>sun</li>
+<li>moon</li>
+<li>star</li>
+</ol>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>使用 <code>|</code> 进行分割<br>| 笔记 | 更新 | 版本 |<br>|——|—–|—–|<br>| note | refresh | version|</p>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>  行内和参考两种方式，都是使用角括号把文字转成链接。</p>
+<p>  title属性可选</p>
+<p>  【注】：</p>
+<ul>
+<li>title可以使用单引号、双引号、括弧包着( ‘’，””，()  )。</li>
+<li>网址可以使用&lt;&gt;包起来。栗子：his is an <a href="http://example.com" target="_blank" rel="noopener">example link</a></li>
+<li>可以将title放在下一行，也可以增加一些缩进，让代码看起来好看。栗子：<ul>
+<li><a href="http://example.com" title="with a title" target="_blank" rel="noopener">行内链接</a></li>
+<li>[参考链接][3]：</li>
+</ul>
+</li>
+</ul>
+<pre><code>[3]: &lt;http://search.msn.com/&gt; 
+    &apos;MSN Search&apos;
+</code></pre><h4 id="行内链接"><a href="#行内链接" class="headerlink" title="行内链接"></a>行内链接</h4><p>this is an <a href="http://example.com" target="_blank" rel="noopener">example link</a><br>带title的链接 <a href="http://example.com/" title="with a title" target="_blank" rel="noopener">example link</a></p>
+<h4 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h4><p>可以为链接定一个名称，可以在文件的其他地方定义该链接的内容</p>
+<p>链接名称可以为字母、数字、空格，但是不区分大小写</p>
+<p>I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].</p>
+<p>[1]: <a href="http://google.com/" target="_blank" rel="noopener">http://google.com/</a> ‘Google’<br>[2]: <a href="http://search.yahoo.com/" target="_blank" rel="noopener">http://search.yahoo.com/</a> ‘Yahoo Search’<br>[3]: <a href="http://search.msn.com/" target="_blank" rel="noopener">http://search.msn.com/</a> ‘MSN Search’</p>
+<p>隐式链接标记功能，链接不指定名称，默认为链接文字。<br>用法：在链接文字后面加空的方括号。<br>栗子：<a href="http:google.com/" target="_blank" rel="noopener">Google</a>   </p>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>图片链接也分为行内连接和参考链接<br>行内链接（title 是可选属性）   </p>
+<ul>
+<li>行内连接<br>语法：<code>![图片替换文字](图片路径 &#39;title可选&#39;)</code><br><img src="./images/0.jpg" alt="alt text" title="Title"></li>
+<li><p>参考链接<br>语法：<code>![图片替换文字][链接id]</code>   </p>
+<p><code>[链接id]: 图片路径 &#39;title可选&#39;</code><br>栗子：<br>  ![Alt text][id]</p>
+<p>  [id]: ./images/0.jpg ‘title’</p>
+</li>
+</ul>
+<p>示例中alt text表示图片不显示时的替换文字。</p>
+<h2 id="其他链接"><a href="#其他链接" class="headerlink" title="其他链接"></a>其他链接</h2><p>自动链接：将网址直接用尖括号包裹即可 <a href="http://www.baidu.com" target="_blank" rel="noopener">http://www.baidu.com</a></p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>在一般的段落文字中，使用反引号(`)来标记代码区段，区段内的&amp;、&lt; 和 &gt; 都会被自动转换成html实体，这样可以很容易的在代码区段内插入html 代码。   </p>
+<p>I strongly recommend against using any <code>&lt;blink&gt;</code> tags.   </p>
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><p>在代码前后增加三个反引号`(<figure class="highlight plain"><figcaption><span>pathon, javascript)</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">``` java</span><br><span class="line">  int i = 0; i = 1;</span><br><span class="line">  for(int i = 0; i &lt; 100; i++) &#123;</span><br><span class="line">    printf(&apos;hello markdown\n&apos;);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
+<p>如果要建立一个已经格式化好的代码区块，只要每行都缩进4个空格或者一个 tab 就可以了，而&amp;、&lt; 和 &gt; 也一样会自动转成 html 实体。</p>
+<h2 id="代码区块"><a href="#代码区块" class="headerlink" title="代码区块"></a>代码区块</h2><p>4个空格或者2个制表符可以开始代码区块, 一个代码区块会一直持续到没有缩进的那一行。</p>
+<p>在代码区块中，一般的markdown语法不会被转换</p>
+<pre><code>圣诞节法律框架房拉克丝京东方啦会计法拉克丝 肯德基发卡量双方均按时离开的房间爱可代发
+**强调**，不会转换
+*修饰*，不会转换
+时打开就发了时代峰峻绿山咖啡看电视剧法兰克
+</code></pre><p>可以在markdown文件中直接使用html标签，<code>&lt;div&gt;</code>、<code>&lt;table&gt;</code>、<code>&lt;pre&gt;</code>、<code>&lt;p&gt;</code>等标签，必须在前后加上空行与其他内容区隔开，还要求他们的开始标签和结束标签不能使用制表符或空格来缩进。</p>
+<p>注意：在html区块内使用markdown样式会没有效果</p>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>在文字前 添加 <code>&gt;</code>，在引用内也可以使用markdown语法</p>
+<blockquote>
+<p>如果你无法简洁的表达你的想法，那只说明你还不够了解它。 – 阿尔伯特·爱因斯坦</p>
+<h1 id="标题一"><a href="#标题一" class="headerlink" title="标题一"></a>标题一</h1><h2 id="标题二"><a href="#标题二" class="headerlink" title="标题二"></a>标题二</h2><h2 id="区块引用"><a href="#区块引用" class="headerlink" title="区块引用"></a>区块引用</h2><blockquote><br>  <p>for example</p><br>  example<br></blockquote> 
+
+</blockquote>
+<h2 id="文件链接"><a href="#文件链接" class="headerlink" title="文件链接"></a>文件链接</h2><p>在需要添加文件链接的词语后面添加<code>[^1]</code>，结尾加入<code>[^1]: 链接文件路径</code><br>hello<a href="./02test.md">^1</a>   </p>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>一行中3个以上的 *、-、_ 可建立分割线， 行内不能有其他东西，可以有空格</p>
+<h2 id=""><a href="#" class="headerlink" title="*"></a><em>*</em></h2><hr>
+<h2 id="特殊字符自动转换"><a href="#特殊字符自动转换" class="headerlink" title="特殊字符自动转换"></a>特殊字符自动转换</h2><p>在html文件中，有两个字符需要特殊处理：&lt; 和 &amp; 。&lt; 符号用于起始标签，&amp;符号用于标记html实体，如果显示原型，需要使用实体的形式：<code>&amp;lt;</code> 和 <code>&amp;amp;</code></p>
+<h2 id="反斜杠"><a href="#反斜杠" class="headerlink" title="反斜杠 \"></a>反斜杠 \</h2><p>markdown 可以利用 \ 来插入一些在语法上有其他意义的符号。markdown支持一下这些符号加上反斜杠来帮助输入普通的符号。   </p>
+<pre><code>\ 反斜线
+` 反引号
+* 星号
+_ 底线
+{} 花括号
+[] 方括号
+() 括弧
+# 井字号
++ 加号
+- 减号
+. 英文句点
+! 惊叹号
+</code></pre><h2 id="markdown-preview-enhanced-插件"><a href="#markdown-preview-enhanced-插件" class="headerlink" title="markdown preview enhanced 插件"></a>markdown preview enhanced 插件</h2><h3 id="图像"><a href="#图像" class="headerlink" title="图像"></a>图像</h3><ol>
+<li>mermaid</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">graph LR;</span><br><span class="line">  A--&gt;B;</span><br><span class="line">  B--&gt;C;</span><br><span class="line">  C--&gt;A;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph TD;</span><br><span class="line">    A--&gt;C;</span><br><span class="line">    A--&gt;C;</span><br><span class="line">    B--&gt;D;</span><br><span class="line">    C--&gt;D;</span><br></pre></td></tr></table></figure>
+
+
+    
+    
+    
+	  <div class="full-width auto-padding tags">
+      
+        <a href="/tags/markdown/">markdown</a>
+      
+	  </div>
+    
+  </section>
+</article>
+    </div>
+  
+    <div class='post-wrapper'>
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
       <a href="/2018/01/11/hello-world/">
         Hello World
       </a>
@@ -416,7 +545,7 @@
 <div class="m_widget tagcloud">
     <div class="header">Tags</div>
     <div class='content'>
-        <a href="/tags/angular-material/" style="font-size: 14px; color: #808080">angular-material</a> <a href="/tags/blog/" style="font-size: 14px; color: #808080">blog</a> <a href="/tags/hexo/" style="font-size: 14px; color: #808080">hexo</a> <a href="/tags/markdown/" style="font-size: 14px; color: #808080">markdown</a>
+        <a href="/tags/angular-material/" style="font-size: 14px; color: #808080">angular-material</a> <a href="/tags/blog/" style="font-size: 14px; color: #808080">blog</a> <a href="/tags/hexo/" style="font-size: 14px; color: #808080">hexo</a> <a href="/tags/markdown/" style="font-size: 20px; color: #000">markdown</a>
     </div>
 </div>
 
