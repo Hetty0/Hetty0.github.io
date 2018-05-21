@@ -98,7 +98,7 @@ disqus_shortname:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 # yilia、material-flow
-theme: material-flow  ## 定义使用的主题
+theme: yilia  ## 定义使用的主题
 
 
 #sitemap
