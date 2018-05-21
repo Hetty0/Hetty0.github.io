@@ -4,7 +4,7 @@
 
 # Site    ## 修改以适应搜索引擎的收录
 title: My Blog  ## 定义网站的标题
-subtitle: thinking...  ## 定义网站的副标题
+subtitle: 不忘初心，方得始终  ## 定义网站的副标题
 description:  ## 定义网站的描述
 author: Alisa   ## 作者
 email: mxhb01@126.com
@@ -41,8 +41,8 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
-  tab_replace:
+  auto_detect: true
+  tab_replace: ''
   
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -79,6 +79,23 @@ default_category: uncategorized
 category_map:
 tag_map:
 
+# Archives
+## 2: Enable pagination
+## 1: Disable pagination
+## 0: Fully Disable
+archive: 1
+category: 1
+tag: 1
+
+# Server
+## Hexo use Connect as a server
+## You can customize the logger format as defined in 
+## http://www.senchalabs.org/connect/logger.html
+port: 4000
+server_ip: localhost
+logger: false
+logger_format: dev
+
 # Date / Time format  ## 时间格式，可不改
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
@@ -99,6 +116,7 @@ disqus_shortname:
 ## Themes: https://hexo.io/themes/
 # yilia、material-flow
 theme: yilia  ## 定义使用的主题
+exclude_generator: ''
 
 
 #sitemap
