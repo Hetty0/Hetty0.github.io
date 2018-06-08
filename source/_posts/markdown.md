@@ -1,10 +1,10 @@
 ---
 title: markdown
 date: 2018-05-21 11:47:43
-tags: 
-  - markdown
 categories: 
   - 技术
+tags: 
+  - markdown
 ---
 
 [TOC]
@@ -28,13 +28,11 @@ categories:
 ## 修辞和强调   
 使用 `*`、`_` 作为标记，文字变成斜体   
 使用 `**`、`__` 作为标记，文字变成粗体   
-使用 `==` 在文字前后实现高亮效果   
 使用 `~~` 在文字前后添加删除线
 
 *斜体*   _斜体_   
 **强调**   __强调__   
 ~~删除线~~   
-==text==
 
 ## 列表
 有序列表和无序列表
@@ -46,7 +44,7 @@ categories:
 * black
 
 + good
-
+  
   在一个列表项目中放多个段落，先插入一个空行，需要前面缩进4个空白或一个tab
 + better
 + best
@@ -69,63 +67,72 @@ categories:
 
 ## 链接
   行内和参考两种方式，都是使用角括号把文字转成链接。
-
-  title属性可选
-
-  【注】：
-  * title可以使用单引号、双引号、括弧包着( ''，""，()  )。
-  * 网址可以使用<>包起来。栗子：his is an [example link](<http://example.com>)
-  * 可以将title放在下一行，也可以增加一些缩进，让代码看起来好看。栗子：
-    * [行内链接](<http://example.com>
+  参考链接可以为链接定一个名称，可以在文件的其他地方定义该链接的内容，链接名称可以为字母、数字、空格，但是不区分大小写
+  
+  语法：
+  * [行内链接](<http://example.com>
       'with a title'
     )
-    * [参考链接][3]：
 
-      [3]: <http://search.msn.com/> 
+    `[行内链接](<http://example.com>'with a title')`
+  * [参考链接][3]
+
+    [3]: <http://search.msn.com/> 
           'MSN Search'
+    ```
+    [参考链接][3]
+
+    [3]: <http://search.msn.com/> 
+          'MSN Search'
+    ```
+  【注】：
+  * title属性可选 
+  * title可以使用单引号、双引号、括弧包着( `''`，`""`，`()`  )。
+  * 网址可以使用`<>`包起来。栗子：`this is an [example link](<http://example.com>)`
+  * 可以将title放在下一行，也可以增加一些缩进，让代码看起来好看。
+    
+  栗子：
   
-#### 行内链接
-this is an [example link](http://example.com)  
-带title的链接 [example link](http://example.com/ 'with a title')
+  行内链接：this is an [example link](http://example.com)
 
-#### 参考链接
-可以为链接定一个名称，可以在文件的其他地方定义该链接的内容
+  `this is an [example link](http://example.com)`  
+  带title的链接： [example link](http://example.com/ 'with a title')
 
-链接名称可以为字母、数字、空格，但是不区分大小写
+  `[example link](http://example.com/ 'with a title')`
 
+  参考链接：
 I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
 
 [1]: http://google.com/ 'Google'
 [2]: http://search.yahoo.com/ 'Yahoo Search'
 [3]: http://search.msn.com/ 'MSN Search'
+```
+I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
+
+[1]: http://google.com/ 'Google'
+[2]: http://search.yahoo.com/ 'Yahoo Search'
+[3]: http://search.msn.com/ 'MSN Search'
+```
 
 隐式链接标记功能，链接不指定名称，默认为链接文字。   
 用法：在链接文字后面加空的方括号。   
 栗子：[Google][]   
 
 [Google]: http:google.com/
+```
+[Google][]
+
+[Google]: http:google.com/
+```
 
 ## 图片
-图片链接也分为行内连接和参考链接   
-行内链接（title 是可选属性）   
-* 行内连接   
+* 行内连接 （title 是可选属性）  
   语法：`![图片替换文字](图片路径 'title可选')` 
-  ![alt text](./images/0.jpg 'Title')
-* 参考链接   
-  语法：`![图片替换文字][链接id]`   
-  
-  `[链接id]: 图片路径 'title可选'`   
-  栗子：   
-    ![Alt text][id]
-
-    [id]: ./images/0.jpg 'title'
-
-
-
-示例中alt text表示图片不显示时的替换文字。
+  ![风景](https://raw.githubusercontent.com/alisa00/alisa00.github.io/master/uploads/0.jpeg 'Title')
 
 ## 其他链接
-自动链接：将网址直接用尖括号包裹即可 <http://www.baidu.com>
+自动链接：将网址直接用尖括号包裹即可` <http://www.baidu.com>`
+ <http://www.baidu.com>
 
 
 ## 代码
@@ -158,10 +165,17 @@ I strongly recommend against using any `<blink>` tags.
 
 ## 引用   
 在文字前 添加 `>`，在引用内也可以使用markdown语法
+```
+  > 如果你无法简洁的表达你的想法，那只说明你还不够了解它。 -- 阿尔伯特·爱因斯坦
+
+  > # 标题一
+  > ## 标题二
+```
 > 如果你无法简洁的表达你的想法，那只说明你还不够了解它。 -- 阿尔伯特·爱因斯坦
 
 > # 标题一
 > ## 标题二
+
 ## 区块引用
 <blockquote>
   <p>for example</p>
@@ -221,9 +235,58 @@ graph TD;
     B-->D;
     C-->D;
 ```
+## 流程图（flowchart）
+  在博客使用流程图 
+  1. npm install --save hexo-filter-flowchart
+  2. 在_config.yml中配置
+  
 
+  ```
+    flowchart:
+    # raphael:   # optional, the source url of raphael.js
+    # flowchart: # optional, the source url of flowchart.js
+    options: # options used for `drawSVG`
+  ```
+  栗子：
+  ```
+    flow
+      st=>start: Start|past:>http://www.google.com[blank]
+      e=>end: End:>http://www.google.com
+      op1=>operation: My Operation|past
+      op2=>operation: Stuff|current
+      sub1=>subroutine: My Subroutine|invalid
+      cond=>condition: Yes
+      or No?|approved:>http://www.google.com
+      c2=>condition: Good idea|rejected
+      io=>inputoutput: catch something...|request
 
+      st->op1(right)->cond
+      cond(yes, right)->c2
+      cond(no)->sub1(left)->op1
+      c2(yes)->io->e
+      c2(no)->op2->e
+    
+  ```
+```flow
+st=>start: Start|past:>http://www.google.com[blank]
+e=>end: End:>http://www.google.com
+op1=>operation: My Operation|past
+op2=>operation: Stuff|current
+sub1=>subroutine: My Subroutine|invalid
+cond=>condition: Yes
+or No?|approved:>http://www.google.com
+c2=>condition: Good idea|rejected
+io=>inputoutput: catch something...|request
 
+st->op1(right)->cond
+cond(yes, right)->c2
+cond(no)->sub1(left)->op1
+c2(yes)->io->e
+c2(no)->op2->e
+```
+
+## 关于博客中添加图片
+在博客中添加图片，图片地址为：https://raw.githubusercontent.com/yourname/yourname.github.io/master/foldername/filename.xxx;
 
 
 
