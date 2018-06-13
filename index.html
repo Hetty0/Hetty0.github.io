@@ -182,40 +182,34 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-github修改username" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/13/github修改username/">github修改username</a>
+      <a class="article-title" href="/2018/06/13/hello-world/">Hello World</a>
     </h1>
   
 
         
-        <a href="/2018/06/13/github修改username/" class="archive-article-date">
-  	<time datetime="2018-06-13T08:04:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-13</time>
+        <a href="/2018/06/13/hello-world/" class="archive-article-date">
+  	<time datetime="2018-06-13T09:10:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-13</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ol>
-<li>首先在github官网上修改<br>Settings -&gt; Account -&gt; Change username<br>修改 username 会有一些想不到的副作用<br><img src="https://raw.githubusercontent.com/Hetty0/Hetty0.github.io/master/uploads/warning.png" alt="warning"></li>
-<li><p>修改本地项目git仓库地址</p>
-<figure class="highlight dsconfig"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">列出现有地址：<span class="string">git </span><span class="string">remote </span>-v</span><br><span class="line">设置远程地址：<span class="string">git </span><span class="string">remote </span><span class="built_in">set-url</span> <span class="string">origin </span>远程仓库地址</span><br><span class="line">检查设置是否成功：<span class="string">git </span><span class="string">remote </span>–v，查看列出的地址是否正确</span><br><span class="line">设置项目的<span class="string">user.</span><span class="string">name跟</span><span class="string">github上</span>的<span class="string">username一</span>致（本人配置了<span class="string">github和</span><span class="string">gitlab，</span>所以只设置此项目的<span class="string">local </span><span class="string">name）</span></span><br><span class="line">  <span class="string">git </span><span class="string">config </span><span class="built_in">--local</span> <span class="string">user.</span><span class="string">name </span><span class="string">"github上的username"</span></span><br><span class="line"></span><br><span class="line">设置好了之后使用<span class="string">git </span><span class="string">push测</span>试一下，发现需要输入<span class="string">Username和</span><span class="string">password，</span>输入正确后，就可以正确使用了！✌️✌️✌️</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修改hexo博客仓库地址<br>好像可以自动重定向，估计是刚改的名字，还没有更新。<br>在_config.yml中修改</p>
-<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">deploy:</span></span><br><span class="line"><span class="symbol">  repo:</span> 新的仓库地址（不要忘了将博客仓库的名字改成对应的新名字）</span><br></pre></td></tr></table></figure>
-<p>注：<br>修改git仓库名称<br> 进入需要修改名字的仓库，点击settings，首项Options中就可以看到Rename。</p>
-</li>
-<li><p>域名DNS修改<br>我使用的是godaddy上的域名，修改DNS配置<br>类型：CNAME<br>名称：www<br>值：yourusername.github.io</p>
-<p>这样，使用你的域名和<a href="http://yourusername.github.io都可以访问你的博客网站啦！" target="_blank" rel="noopener">http://yourusername.github.io都可以访问你的博客网站啦！</a></p>
-</li>
-</ol>
-
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+        
+          <a class="article-more-a" href="/2018/06/13/hello-world/#more">more >></a>
+        
       
 
       
@@ -223,22 +217,11 @@ var _hmt = _hmt || [];
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/06/13/github修改username/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/06/13/hello-world/">展开全文 >></a>
         </p>
       
 
@@ -268,33 +251,29 @@ var _hmt = _hmt || [];
 
 
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-github修改username" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/13/hello-world/">Hello World</a>
+      <a class="article-title" href="/2018/06/13/github修改username/">github修改username</a>
     </h1>
   
 
         
-        <a href="/2018/06/13/hello-world/" class="archive-article-date">
-  	<time datetime="2018-06-13T07:30:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-13</time>
+        <a href="/2018/06/13/github修改username/" class="archive-article-date">
+  	<time datetime="2018-06-13T08:04:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-13</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+        <h4 id="1-首先在github官网上修改"><a href="#1-首先在github官网上修改" class="headerlink" title="1.首先在github官网上修改"></a>1.首先在github官网上修改</h4><p>  Settings -&gt; Account -&gt; Change username<br>  修改 username 会有一些想不到的副作用<br>  <img src="https://raw.githubusercontent.com/Hetty0/Hetty0.github.io/master/uploads/warning.png" alt="warning"></p>
         
-          <a class="article-more-a" href="/2018/06/13/hello-world/#more">more >></a>
+          <a class="article-more-a" href="/2018/06/13/github修改username/#more">more >></a>
         
       
 
@@ -303,11 +282,22 @@ var _hmt = _hmt || [];
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/06/13/hello-world/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/06/13/github修改username/">展开全文 >></a>
         </p>
       
 
@@ -706,11 +696,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
               <li class="article-tag-list-item">

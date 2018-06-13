@@ -8,19 +8,19 @@
   <link rel="dns-prefetch" href="http://www.lhgcool.club">
   <title>github修改username | My Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="首先在github官网上修改Settings -&amp;gt; Account -&amp;gt; Change username修改 username 会有一些想不到的副作用 修改本地项目git仓库地址 1234567列出现有地址：git remote -v设置远程地址：git remote set-url origin 远程仓库地址检查设置是否成功：git remote –v，查看列出的地址是否正确设置项">
+  <meta name="description" content="1.首先在github官网上修改  Settings -&amp;gt; Account -&amp;gt; Change username  修改 username 会有一些想不到的副作用">
 <meta name="keywords" content="github">
 <meta property="og:type" content="article">
 <meta property="og:title" content="github修改username">
 <meta property="og:url" content="http://www.lhgcool.club/2018/06/13/github修改username/index.html">
 <meta property="og:site_name" content="My Blog">
-<meta property="og:description" content="首先在github官网上修改Settings -&amp;gt; Account -&amp;gt; Change username修改 username 会有一些想不到的副作用 修改本地项目git仓库地址 1234567列出现有地址：git remote -v设置远程地址：git remote set-url origin 远程仓库地址检查设置是否成功：git remote –v，查看列出的地址是否正确设置项">
+<meta property="og:description" content="1.首先在github官网上修改  Settings -&amp;gt; Account -&amp;gt; Change username  修改 username 会有一些想不到的副作用">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/Hetty0/Hetty0.github.io/master/uploads/warning.png">
-<meta property="og:updated_time" content="2018-06-13T09:03:15.000Z">
+<meta property="og:updated_time" content="2018-06-13T09:14:55.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="github修改username">
-<meta name="twitter:description" content="首先在github官网上修改Settings -&amp;gt; Account -&amp;gt; Change username修改 username 会有一些想不到的副作用 修改本地项目git仓库地址 1234567列出现有地址：git remote -v设置远程地址：git remote set-url origin 远程仓库地址检查设置是否成功：git remote –v，查看列出的地址是否正确设置项">
+<meta name="twitter:description" content="1.首先在github官网上修改  Settings -&amp;gt; Account -&amp;gt; Change username  修改 username 会有一些想不到的副作用">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/Hetty0/Hetty0.github.io/master/uploads/warning.png">
   
     <link rel="alternative" href="/atom.xml" title="My Blog" type="application/atom+xml">
@@ -207,19 +207,13 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ol>
-<li>首先在github官网上修改<br>Settings -&gt; Account -&gt; Change username<br>修改 username 会有一些想不到的副作用<br><img src="https://raw.githubusercontent.com/Hetty0/Hetty0.github.io/master/uploads/warning.png" alt="warning"></li>
-<li><p>修改本地项目git仓库地址</p>
-<figure class="highlight dsconfig"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">列出现有地址：<span class="string">git </span><span class="string">remote </span>-v</span><br><span class="line">设置远程地址：<span class="string">git </span><span class="string">remote </span><span class="built_in">set-url</span> <span class="string">origin </span>远程仓库地址</span><br><span class="line">检查设置是否成功：<span class="string">git </span><span class="string">remote </span>–v，查看列出的地址是否正确</span><br><span class="line">设置项目的<span class="string">user.</span><span class="string">name跟</span><span class="string">github上</span>的<span class="string">username一</span>致（本人配置了<span class="string">github和</span><span class="string">gitlab，</span>所以只设置此项目的<span class="string">local </span><span class="string">name）</span></span><br><span class="line">  <span class="string">git </span><span class="string">config </span><span class="built_in">--local</span> <span class="string">user.</span><span class="string">name </span><span class="string">"github上的username"</span></span><br><span class="line"></span><br><span class="line">设置好了之后使用<span class="string">git </span><span class="string">push测</span>试一下，发现需要输入<span class="string">Username和</span><span class="string">password，</span>输入正确后，就可以正确使用了！✌️✌️✌️</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修改hexo博客仓库地址<br>好像可以自动重定向，估计是刚改的名字，还没有更新。<br>在_config.yml中修改</p>
-<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">deploy:</span></span><br><span class="line"><span class="symbol">  repo:</span> 新的仓库地址（不要忘了将博客仓库的名字改成对应的新名字）</span><br></pre></td></tr></table></figure>
-<p>注：<br>修改git仓库名称<br> 进入需要修改名字的仓库，点击settings，首项Options中就可以看到Rename。</p>
-</li>
-<li><p>域名DNS修改<br>我使用的是godaddy上的域名，修改DNS配置<br>类型：CNAME<br>名称：www<br>值：yourusername.github.io</p>
-<p>这样，使用你的域名和<a href="http://yourusername.github.io都可以访问你的博客网站啦！" target="_blank" rel="noopener">http://yourusername.github.io都可以访问你的博客网站啦！</a></p>
-</li>
-</ol>
+        <h4 id="1-首先在github官网上修改"><a href="#1-首先在github官网上修改" class="headerlink" title="1.首先在github官网上修改"></a>1.首先在github官网上修改</h4><p>  Settings -&gt; Account -&gt; Change username<br>  修改 username 会有一些想不到的副作用<br>  <img src="https://raw.githubusercontent.com/Hetty0/Hetty0.github.io/master/uploads/warning.png" alt="warning"></p>
+  <a id="more"></a>
+<h4 id="2-修改本地项目git仓库地址"><a href="#2-修改本地项目git仓库地址" class="headerlink" title="2.修改本地项目git仓库地址"></a>2.修改本地项目git仓库地址</h4>  <figure class="highlight dsconfig"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">列出现有地址：<span class="string">git </span><span class="string">remote </span>-v</span><br><span class="line">设置远程地址：<span class="string">git </span><span class="string">remote </span><span class="built_in">set-url</span> <span class="string">origin </span>远程仓库地址</span><br><span class="line">检查设置是否成功：<span class="string">git </span><span class="string">remote </span>–v，查看列出的地址是否正确</span><br><span class="line">设置项目的<span class="string">user.</span><span class="string">name跟</span><span class="string">github上</span>的<span class="string">username一</span>致（本人配置了<span class="string">github和</span><span class="string">gitlab，</span>所以只设置此项目的<span class="string">local </span><span class="string">name）</span></span><br><span class="line">  <span class="string">git </span><span class="string">config </span><span class="built_in">--local</span> <span class="string">user.</span><span class="string">name </span><span class="string">"github上的username"</span></span><br><span class="line"></span><br><span class="line">设置好了之后使用<span class="string">git </span><span class="string">push测</span>试一下，发现需要输入<span class="string">Username和</span><span class="string">password，</span>输入正确后，就可以正确使用了！✌️✌️✌️</span><br></pre></td></tr></table></figure>
+<h4 id="3-修改hexo博客仓库地址"><a href="#3-修改hexo博客仓库地址" class="headerlink" title="3.修改hexo博客仓库地址"></a>3.修改hexo博客仓库地址</h4><p>  好像可以自动重定向，估计是刚改的名字，还没有更新。<br>  在_config.yml中修改<br>  <figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">deploy:</span></span><br><span class="line"><span class="symbol">  repo:</span> 新的仓库地址（不要忘了将博客仓库的名字改成对应的新名字）</span><br></pre></td></tr></table></figure></p>
+<p>  注：<br>  修改git仓库名称<br>    进入需要修改名字的仓库，点击settings，首项Options中就可以看到Rename。</p>
+<h4 id="4-域名DNS修改"><a href="#4-域名DNS修改" class="headerlink" title="4.域名DNS修改"></a>4.域名DNS修改</h4><p>  我使用的是godaddy上的域名，修改DNS配置<br>  类型：CNAME<br>  名称：www<br>   值：yourusername.github.io</p>
+<p>  这样，使用你的域名和<a href="http://yourusername.github.io都可以访问你的博客网站啦！" target="_blank" rel="noopener">http://yourusername.github.io都可以访问你的博客网站啦！</a></p>
 
       
 
@@ -334,9 +328,18 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
+    <a href="/2018/06/13/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
   
-    <a href="/2018/06/13/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+  
+    <a href="/2018/05/21/markdown/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">markdown</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -363,7 +366,7 @@ var _hmt = _hmt || [];
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-首先在github官网上修改"><span class="toc-number">1.</span> <span class="toc-text">1.首先在github官网上修改</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-修改本地项目git仓库地址"><span class="toc-number">2.</span> <span class="toc-text">2.修改本地项目git仓库地址</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-修改hexo博客仓库地址"><span class="toc-number">3.</span> <span class="toc-text">3.修改hexo博客仓库地址</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-域名DNS修改"><span class="toc-number">4.</span> <span class="toc-text">4.域名DNS修改</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -475,11 +478,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
               <li class="article-tag-list-item">
