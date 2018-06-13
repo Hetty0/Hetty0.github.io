@@ -1,7 +1,8 @@
 ---
 title: github修改username
 date: 2018-06-13 16:04:59
-tags: github
+tags: 
+  - github
 ---
 
 #### 1.首先在github官网上修改
