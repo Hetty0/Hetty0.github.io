@@ -6,7 +6,7 @@
 title: My Blog  ## 定义网站的标题
 subtitle: 不忘初心，方得始终  ## 定义网站的副标题
 description:  ## 定义网站的描述
-author: Alisa   ## 作者
+author: Hetty   ## 作者
 email: mxhb01@126.com
 language: zh-CN  ## 定义网站的语言，默认zh-Hans
 timezone: Asia/Shanghai    ## 定义网站的时区

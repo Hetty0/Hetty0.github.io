@@ -128,7 +128,7 @@ I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
 ## 图片
 * 行内连接 （title 是可选属性）  
   语法：`![图片替换文字](图片路径 'title可选')` 
-  ![风景](https://raw.githubusercontent.com/alisa00/alisa00.github.io/master/uploads/0.jpeg 'Title')
+  ![风景](https://raw.githubusercontent.com/Hetty0/Hetty0.github.io/master/uploads/0.jpeg 'Title')
 
 ## 其他链接
 自动链接：将网址直接用尖括号包裹即可` <http://www.baidu.com>`
