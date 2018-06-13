@@ -156,7 +156,7 @@ flowchart:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/alisa00/alisa00.github.io.git
+  repo: https://github.com/Hetty0/Hetty0.github.io.git
   branch: master
 
 
