@@ -7,7 +7,7 @@ tags:
   - react
 ---
 
-组件属性类型检查 —— react内置的类型检查功能，需要配置propTypes属性
+组件属性类型检查 —— React内置的类型检查功能，需要配置propTypes属性
 `注意: React.PropTypes 自 React v15.5 起已弃用。请使用 prop-types 库代替。`
 ```
 栗子：
@@ -25,7 +25,7 @@ Greeting.propTypes = {
 }
 ```
 <!-- more -->
-PropTypes包含一整套验证器，可用于确保你接收的数据是有效的。在这个示例中，使用了PropTypes.string。当你给属性传递了无效值时，javascript控制台将会打印出警告。处于性能原因，propTypes只在开发模式下进行检查。
+`PropTypes`包含一整套验证器，可用于确保你接收的数据是有效的。在这个示例中，使用了`PropTypes.string`。当你给属性传递了无效值时，javascript控制台将会打印出警告。处于性能原因，`propTypes`只在开发模式下进行检查。
 #### PropTypes
 下面是使用不同的验证器的例子：
 ```
