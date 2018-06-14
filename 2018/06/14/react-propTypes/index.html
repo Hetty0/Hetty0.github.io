@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.lhgcool.club">
-  <title>Archives | My Blog</title>
+  <title>react propTypes | My Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="My Blog">
-<meta property="og:url" content="http://www.lhgcool.club/archives/index.html">
+  <meta name="description" content="组件属性类型检查 —— react内置的类型检查功能，需要配置propTypes属性注意: React.PropTypes 自 React v15.5 起已弃用。请使用 prop-types 库代替。12345678910111213栗子：import React from &apos;react&apos;;import PropTypes from &apos;prop-types&apos;;class Greeting exte">
+<meta name="keywords" content="react">
+<meta property="og:type" content="article">
+<meta property="og:title" content="react propTypes">
+<meta property="og:url" content="http://www.lhgcool.club/2018/06/14/react-propTypes/index.html">
 <meta property="og:site_name" content="My Blog">
+<meta property="og:description" content="组件属性类型检查 —— react内置的类型检查功能，需要配置propTypes属性注意: React.PropTypes 自 React v15.5 起已弃用。请使用 prop-types 库代替。12345678910111213栗子：import React from &apos;react&apos;;import PropTypes from &apos;prop-types&apos;;class Greeting exte">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-06-14T06:39:44.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="My Blog">
+<meta name="twitter:title" content="react propTypes">
+<meta name="twitter:description" content="组件属性类型检查 —— react内置的类型检查功能，需要配置propTypes属性注意: React.PropTypes 自 React v15.5 起已弃用。请使用 prop-types 库代替。12345678910111213栗子：import React from &apos;react&apos;;import PropTypes from &apos;prop-types&apos;;class Greeting exte">
   
     <link rel="alternative" href="/atom.xml" title="My Blog" type="application/atom+xml">
   
@@ -180,37 +185,74 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
-  
+            <article id="post-react-propTypes" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/06/14/react-propTypes/" class="archive-article-date">
-  	<time datetime="2018-06-14T06:17:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-14</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/06/14/react-propTypes/">react propTypes</a>
+    <h1 class="article-title" itemprop="name">
+      react propTypes
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/06/14/react-propTypes/" class="archive-article-date">
+  	<time datetime="2018-06-14T06:17:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>组件属性类型检查 —— react内置的类型检查功能，需要配置propTypes属性<br><code>注意: React.PropTypes 自 React v15.5 起已弃用。请使用 prop-types 库代替。</code><br><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">栗子：</span><br><span class="line"><span class="keyword">import</span> <span class="type">React</span> from <span class="symbol">'reac</span>t';</span><br><span class="line"><span class="keyword">import</span> <span class="type">PropTypes</span> from <span class="symbol">'prop</span>-types';</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Greeting</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      &lt;h1&gt;hello, &#123;<span class="keyword">this</span>.props.name&#125;&lt;/h1&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">Greeting</span>.propTypes = &#123;</span><br><span class="line">  name: <span class="type">PropTypes</span>.string</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p>PropTypes包含一整套验证器，可用于确保你接收的数据是有效的。在这个示例中，使用了PropTypes.string。当你给属性传递了无效值时，javascript控制台将会打印出警告。处于性能原因，propTypes只在开发模式下进行检查。</p>
+<h4 id="PropTypes"><a href="#PropTypes" class="headerlink" title="PropTypes"></a>PropTypes</h4><p>下面是使用不同的验证器的例子：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> PropTypes <span class="keyword">from</span> <span class="string">'prop-types'</span>;</span><br><span class="line"></span><br><span class="line">MyComponent.propTypes = &#123;</span><br><span class="line">  <span class="comment">// 你可以将属性声明为以下 JS 原生类型</span></span><br><span class="line">  optionalArray: PropTypes.array,</span><br><span class="line">  optionalBool: PropTypes.bool,</span><br><span class="line">  optionalFunc: PropTypes.func,</span><br><span class="line">  optionalNumber: PropTypes.number,</span><br><span class="line">  optionalObject: PropTypes.object,</span><br><span class="line">  optionalString: PropTypes.string,</span><br><span class="line">  optionalSymbol: PropTypes.symbol,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 任何可被渲染的元素（包括数字、字符串、子元素或数组）。</span></span><br><span class="line">  optionalNode: PropTypes.node,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 一个 React 元素</span></span><br><span class="line">  optionalElement: PropTypes.element,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 你也可以声明属性为某个类的实例，这里使用 JS 的</span></span><br><span class="line">  <span class="comment">// instanceof 操作符实现。</span></span><br><span class="line">  optionalMessage: PropTypes.instanceOf(Message),</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 你也可以限制你的属性值是某个特定值之一</span></span><br><span class="line">  optionalEnum: PropTypes.oneOf([<span class="string">'News'</span>, <span class="string">'Photos'</span>]),</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 限制它为列举类型之一的对象</span></span><br><span class="line">  optionalUnion: PropTypes.oneOfType([</span><br><span class="line">    PropTypes.string,</span><br><span class="line">    PropTypes.number,</span><br><span class="line">    PropTypes.instanceOf(Message)</span><br><span class="line">  ]),</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 一个指定元素类型的数组</span></span><br><span class="line">  optionalArrayOf: PropTypes.arrayOf(PropTypes.number),</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 一个指定类型的对象</span></span><br><span class="line">  optionalObjectOf: PropTypes.objectOf(PropTypes.number),</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 一个指定属性及其类型的对象</span></span><br><span class="line">  optionalObjectWithShape: PropTypes.shape(&#123;</span><br><span class="line">    color: PropTypes.string,</span><br><span class="line">    fontSize: PropTypes.number</span><br><span class="line">  &#125;),</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 你也可以在任何 PropTypes 属性后面加上 `isRequired` </span></span><br><span class="line">  <span class="comment">// 后缀，这样如果这个属性父组件没有提供时，会打印警告信息</span></span><br><span class="line">  requiredFunc: PropTypes.func.isRequired,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 任意类型的数据</span></span><br><span class="line">  requiredAny: PropTypes.any.isRequired,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 你也可以指定一个自定义验证器。它应该在验证失败时返回</span></span><br><span class="line">  <span class="comment">// 一个 Error 对象而不是 `console.warn` 或抛出异常。</span></span><br><span class="line">  <span class="comment">// 不过在 `oneOfType` 中它不起作用。</span></span><br><span class="line">  customProp: <span class="function"><span class="keyword">function</span>(<span class="params">props, propName, componentName</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (!<span class="regexp">/matchme/</span>.test(props[propName])) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Error</span>(</span><br><span class="line">        <span class="string">'Invalid prop `'</span> + propName + <span class="string">'` supplied to'</span> +</span><br><span class="line">        <span class="string">' `'</span> + componentName + <span class="string">'`. Validation failed.'</span></span><br><span class="line">      );</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 不过你可以提供一个自定义的 `arrayOf` 或 `objectOf` </span></span><br><span class="line">  <span class="comment">// 验证器，它应该在验证失败时返回一个 Error 对象。 它被用</span></span><br><span class="line">  <span class="comment">// 于验证数组或对象的每个值。验证器前两个参数的第一个是数组</span></span><br><span class="line">  <span class="comment">// 或对象本身，第二个是它们对应的键。</span></span><br><span class="line">  customArrayProp: PropTypes.arrayOf(<span class="function"><span class="keyword">function</span>(<span class="params">propValue, key, componentName, location, propFullName</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (!<span class="regexp">/matchme/</span>.test(propValue[key])) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Error</span>(</span><br><span class="line">        <span class="string">'Invalid prop `'</span> + propFullName + <span class="string">'` supplied to'</span> +</span><br><span class="line">        <span class="string">' `'</span> + componentName + <span class="string">'`. Validation failed.'</span></span><br><span class="line">      );</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<h4 id="限制单个子代"><a href="#限制单个子代" class="headerlink" title="限制单个子代"></a>限制单个子代</h4><p>使用<code>PropTypes.element</code>你可以指定只传递一个子代<br><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="type">PropTypes</span> from <span class="symbol">'prop</span>-types';</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyComponent</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="comment">// This must be exactly one element or it will warn.</span></span><br><span class="line">    const children = <span class="keyword">this</span>.props.children;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &#123;children&#125;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">MyComponent</span>.propTypes = &#123;</span><br><span class="line">  children: <span class="type">PropTypes</span>.element.isRequired</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<h4 id="属性默认值"><a href="#属性默认值" class="headerlink" title="属性默认值"></a>属性默认值</h4><p>你可使用配置<code>defaultProps</code>为<code>props</code>定义默认值：<br><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Greeting</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      &lt;h1&gt;<span class="type">Hello</span>, &#123;<span class="keyword">this</span>.props.name&#125;&lt;/h1&gt;</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 为属性指定默认值:</span></span><br><span class="line"><span class="type">Greeting</span>.defaultProps = &#123;</span><br><span class="line">  name: <span class="symbol">'Strange</span>r'</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 渲染 "Hello, Stranger":</span></span><br><span class="line"><span class="type">ReactDOM</span>.render(</span><br><span class="line">  &lt;<span class="type">Greeting</span> /&gt;,</span><br><span class="line">  document.getElementById(<span class="symbol">'exampl</span>e')</span><br><span class="line">);</span><br></pre></td></tr></table></figure></p>
+<p>如果你在使用<a href="https://babeljs.io/docs/en/babel-plugin-transform-class-properties/" target="_blank" rel="noopener">transform-class-properties</a>的Babel转换器，你也可以在React组件类中声明<code>defaultProps</code>作为静态属性。这个语还没有最终通过，在浏览器中需要一步编译工作。更多信息，查看<a href="https://github.com/tc39/proposal-class-fields" target="_blank" rel="noopener">类字段提议</a>。<br><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Greeting</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</span><br><span class="line">  static defaultProps = &#123;</span><br><span class="line">    name: <span class="symbol">'strange</span>r'</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      &lt;div&gt;<span class="type">Hello</span>, &#123;<span class="keyword">this</span>.props.name&#125;&lt;/div&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><code>defaultProps</code>用来确保<code>this.props.name</code>在父组件没有特别指定的情况下，有一个初始值。类型检查发生在<code>defaultProps</code>赋值之后，所以类型检查也会应用到<code>defaultProps</code>上面。</p>
+<p><a href="https://doc.react-china.org/docs/typechecking-with-proptypes.html" target="_blank" rel="noopener">查看文档链接</a></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/uploads/zfbpay.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/uploads/wxpay.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -222,180 +264,7 @@ var _hmt = _hmt || [];
 		</ul>
 	</div>
 
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/technology//" class="article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/06/13/hello-world/" class="archive-article-date">
-  	<time datetime="2018-06-13T09:10:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/06/13/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/06/13/github修改username/" class="archive-article-date">
-  	<time datetime="2018-06-13T08:04:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/06/13/github修改username/">github修改username</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/05/21/markdown/" class="archive-article-date">
-  	<time datetime="2018-05-21T03:47:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/21/markdown/">markdown</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">markdown</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/technology//" class="article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
       
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/08/16/关于angular-material的一点东西/" class="archive-article-date">
-  	<time datetime="2017-08-16T09:44:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/16/关于angular-material的一点东西/">关于angular material的一点东西</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">angular-material</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -408,66 +277,117 @@ var _hmt = _hmt || [];
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://www.lhgcool.club/2018/06/14/react-propTypes/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/08/14/关于如何修改博客主题/" class="archive-article-date">
-  	<time datetime="2017-08-14T11:43:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-14</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/06/13/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/14/关于如何修改博客主题/">关于hexo如何修改博客主题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/technology//" class="article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#PropTypes"><span class="toc-number">1.</span> <span class="toc-text">PropTypes</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#限制单个子代"><span class="toc-number">2.</span> <span class="toc-text">限制单个子代</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#属性默认值"><span class="toc-number">3.</span> <span class="toc-text">属性默认值</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -490,8 +410,8 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
