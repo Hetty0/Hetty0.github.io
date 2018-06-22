@@ -24,7 +24,7 @@ tags:
 #### 标题--第4阶
 ##### 标题--第5阶
 ###### 标题--第6阶
-
+<span id="anchor">锚点目标位置</span>
 ## 修辞和强调   
 使用 `*`、`_` 作为标记，文字变成斜体   
 使用 `**`、`__` 作为标记，文字变成粗体   
@@ -134,6 +134,11 @@ I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
 自动链接：将网址直接用尖括号包裹即可` <http://www.baidu.com>`
  <http://www.baidu.com>
 
+## 锚点
+  [锚点链接](#anchor)
+  语法：
+  `[锚点链接](#anchor)` 
+  `<span id="anchor">锚点目标位置</span>`
 
 ## 代码
 在一般的段落文字中，使用反引号(`)来标记代码区段，区段内的&、< 和 > 都会被自动转换成html实体，这样可以很容易的在代码区段内插入html 代码。   
