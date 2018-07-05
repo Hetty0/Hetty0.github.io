@@ -5,6 +5,7 @@ tags:
   - react
 ---
 
+
 1.项目初始化：`npm init`
 2.安装全局webpack环境：`npm install webpack -g`
 3.安装react、react-dom、webpack
@@ -118,3 +119,5 @@ module.exports = {
   }
 ```
 通过基础搭建可以发现，每次都要重新构建然后刷新index.html，才能得到最新的效果，开发效率极低。下节开始使用`webpack-dev-server`+`react-hot-loader`搭建前端服务器并实现热更新，动态刷新组件。
+
+[查看文档链接](http://www.cnblogs.com/raion/p/8053799.html)
