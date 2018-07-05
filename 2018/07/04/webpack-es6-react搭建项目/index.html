@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.lhgcool.club">
-  <title>Tag: react | My Blog</title>
+  <title>webpack+es6+react搭建项目（1：基础） | My Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="My Blog">
-<meta property="og:url" content="http://www.lhgcool.club/tags/react/index.html">
+  <meta name="description" content="1.项目初始化：npm init2.安装全局webpack环境：npm install webpack -g3.安装react、react-dom、webpack12npm install react react-dom --savenpm install webpack --save-dev 4.安装babel编译插件  因为我们要用的是es6，浏览器没办法直接识别，所以需要安装babel插件,">
+<meta name="keywords" content="react">
+<meta property="og:type" content="article">
+<meta property="og:title" content="webpack+es6+react搭建项目（1：基础）">
+<meta property="og:url" content="http://www.lhgcool.club/2018/07/04/webpack-es6-react搭建项目/index.html">
 <meta property="og:site_name" content="My Blog">
+<meta property="og:description" content="1.项目初始化：npm init2.安装全局webpack环境：npm install webpack -g3.安装react、react-dom、webpack12npm install react react-dom --savenpm install webpack --save-dev 4.安装babel编译插件  因为我们要用的是es6，浏览器没办法直接识别，所以需要安装babel插件,">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-07-05T10:07:37.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="My Blog">
+<meta name="twitter:title" content="webpack+es6+react搭建项目（1：基础）">
+<meta name="twitter:description" content="1.项目初始化：npm init2.安装全局webpack环境：npm install webpack -g3.安装react、react-dom、webpack12npm install react react-dom --savenpm install webpack --save-dev 4.安装babel编译插件  因为我们要用的是es6，浏览器没办法直接识别，所以需要安装babel插件,">
   
     <link rel="alternative" href="/atom.xml" title="My Blog" type="application/atom+xml">
   
@@ -180,75 +185,75 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
-  
+            <article id="post-webpack-es6-react搭建项目" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/04/webpack-es6-react搭建项目（二）/" class="archive-article-date">
-  	<time datetime="2018-07-04T05:17:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-04</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/04/webpack-es6-react搭建项目（二）/">webpack+es6+react搭建项目（2：前端服务器+热加载）</a>
+    <h1 class="article-title" itemprop="name">
+      webpack+es6+react搭建项目（1：基础）
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">react</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/04/webpack-es6-react搭建项目/" class="archive-article-date">
+        
+        <a href="/2018/07/04/webpack-es6-react搭建项目/" class="archive-article-date">
   	<time datetime="2018-07-04T03:18:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-04</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/04/webpack-es6-react搭建项目/">webpack+es6+react搭建项目（1：基础）</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1.项目初始化：<code>npm init</code><br>2.安装全局webpack环境：<code>npm install webpack -g</code><br>3.安装react、react-dom、webpack<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install react react-dom --save</span><br><span class="line">npm install webpack --save-dev</span><br></pre></td></tr></table></figure></p>
+<p>4.安装babel编译插件<br>  因为我们要用的是es6，浏览器没办法直接识别，所以需要安装babel插件,babel插件是webpack需要的加载器，如果没有这几个加载器我们的jsx语法，和es6语法就会报错。如果某些代码需要调用Babel的API进行转码，就要使用babel-core模块<br>  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install babel-loader babel-core --save</span><br><span class="line">npm install babel-preset-es2015 babel-preset-react --save-dev</span><br></pre></td></tr></table></figure></p>
+  <a id="more"></a>
+<p>5.webpack配置：<a href="#webpackConfig">webpack.config.js</a><br>6.运行项目：<code>webpack --config webpack.config.js</code><br>7.项目目录预览<br><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- your project</span></span><br><span class="line">  |<span class="comment">-- dist</span></span><br><span class="line">    |<span class="comment">-- bundle.js(webpack打包自动生成)</span></span><br><span class="line">    |<span class="comment">-- index.html</span></span><br><span class="line">  |<span class="comment">-- src</span></span><br><span class="line">    |<span class="comment">-- index.js</span></span><br><span class="line">  |<span class="comment">-- package.json</span></span><br><span class="line">  |<span class="comment">-- wabpack.config.js</span></span><br></pre></td></tr></table></figure></p>
+<p>index.html<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">'root'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">'./bundle.js'</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>index.js<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> ReactDom <span class="keyword">from</span> <span class="string">'react-dom'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        Hello World!</span><br><span class="line">      &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">    )</span></span><br><span class="line"><span class="regexp">  &#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">ReactDom.render(&lt;App /</span>&gt;, <span class="built_in">document</span>.getElementById(<span class="string">'root'</span>));</span><br></pre></td></tr></table></figure></p>
+<p><span id="webpackConfig">webpack.config.js</span><br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>);</span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  entry: path.resolve(__dirname, <span class="string">'./src/index.js'</span>), <span class="comment">// __dirname表示当前目录</span></span><br><span class="line">  output: &#123;</span><br><span class="line">    path: path.resolve(__dirname, <span class="string">'./dist'</span>), <span class="comment">// 输出路径</span></span><br><span class="line">    filename: <span class="string">'bundle.js'</span> <span class="comment">// 打包后的文件</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="built_in">module</span>: &#123;</span><br><span class="line">    <span class="comment">// babel-loader: babel加载器</span></span><br><span class="line">    <span class="comment">// babel-preset-2015：支持es2015</span></span><br><span class="line">    <span class="comment">// bable-preset-react：jsx转换成js</span></span><br><span class="line">    rules: [</span><br><span class="line">      &#123;</span><br><span class="line">        test: <span class="regexp">/\.(js|jsx)$/</span>,</span><br><span class="line">        use: &#123;</span><br><span class="line">          loader: <span class="string">'babel-loader'</span>,</span><br><span class="line">          options: &#123;</span><br><span class="line">              presets: [<span class="string">'es2015'</span>, <span class="string">'react'</span>],</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        exclude: <span class="regexp">/node_modules/</span></span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>还可以将webpack.config.js中的babel配置单独抽离出来：新建文件.babelrc<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"presets"</span>: [</span><br><span class="line">    <span class="string">"es2015"</span>,</span><br><span class="line">    <span class="string">"react"</span></span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>编辑<code>webpack.config.js</code><br><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  ...</span><br><span class="line">  <span class="keyword">module</span>: &#123;</span><br><span class="line">    rules: [</span><br><span class="line">      &#123;</span><br><span class="line">        test: <span class="regexp">/\.(js|jsx)$/</span>,</span><br><span class="line">        loader: <span class="string">'babel-loader'</span>,</span><br><span class="line">        exclude: <span class="regexp">/node_modules/</span></span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>通过基础搭建可以发现，每次都要重新构建然后刷新index.html，才能得到最新的效果，开发效率极低。下节开始使用<code>webpack-dev-server</code>+<code>react-hot-loader</code>搭建前端服务器并实现热更新，动态刷新组件。</p>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/uploads/zfbpay.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/uploads/wxpay.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -260,117 +265,128 @@ var _hmt = _hmt || [];
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://www.lhgcool.club/2018/07/04/webpack-es6-react搭建项目/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/06/15/react-Component-PureComponent/" class="archive-article-date">
-  	<time datetime="2018-06-15T07:31:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-15</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2018/07/04/webpack-es6-react搭建项目（二）/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          webpack+es6+react搭建项目（2：前端服务器+热加载）
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/06/15/react-Component-PureComponent/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">react Component &amp;&amp; PureComponent</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/06/15/react-Component-PureComponent/">react Component &amp;&amp; PureComponent</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">react</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/technology//" class="article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/06/14/react-propTypes/" class="archive-article-date">
-  	<time datetime="2018-06-14T06:17:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/06/14/react-propTypes/">react propTypes</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">react</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/technology//" class="article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -393,9 +409,9 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,

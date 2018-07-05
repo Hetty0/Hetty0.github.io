@@ -182,6 +182,162 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-webpack-es6-react搭建项目（二）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/04/webpack-es6-react搭建项目（二）/">webpack+es6+react搭建项目（2：前端服务器+热加载）</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/04/webpack-es6-react搭建项目（二）/" class="archive-article-date">
+  	<time datetime="2018-07-04T05:17:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>webpack-dev-server是一个小型的静态文件服务器，为webpack打包的资源文件提供Web服务。并且提供自动刷新和Hot Module Replacement（模块热替换：前端代码变动后无需刷新整个页面，只把变化的部分替换掉）</p>
+<ol>
+<li><a href="#server">搭建前端服务器</a></li>
+<li><a href="#hotReplace">热更新</a><h3 id="搭建前端服务器"><a href="#搭建前端服务器" class="headerlink" title="搭建前端服务器"></a><span id="server">搭建前端服务器</span></h3>1.搭建前端服务器 <code>npm install webpack-dev-server --save-dev</code><br>2.在项目根目录创建 <code>webpack.server.config.js</code>
+        
+          <a class="article-more-a" href="/2018/07/04/webpack-es6-react搭建项目（二）/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">react</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/04/webpack-es6-react搭建项目（二）/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-webpack-es6-react搭建项目" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/04/webpack-es6-react搭建项目/">webpack+es6+react搭建项目（1：基础）</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/04/webpack-es6-react搭建项目/" class="archive-article-date">
+  	<time datetime="2018-07-04T03:18:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1.项目初始化：<code>npm init</code><br>2.安装全局webpack环境：<code>npm install webpack -g</code><br>3.安装react、react-dom、webpack<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install react react-dom --save</span><br><span class="line">npm install webpack --save-dev</span><br></pre></td></tr></table></figure></p>
+<p>4.安装babel编译插件<br>  因为我们要用的是es6，浏览器没办法直接识别，所以需要安装babel插件,babel插件是webpack需要的加载器，如果没有这几个加载器我们的jsx语法，和es6语法就会报错。如果某些代码需要调用Babel的API进行转码，就要使用babel-core模块<br>  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install babel-loader babel-core --save</span><br><span class="line">npm install babel-preset-es2015 babel-preset-react --save-dev</span><br></pre></td></tr></table></figure></p>
+        
+          <a class="article-more-a" href="/2018/07/04/webpack-es6-react搭建项目/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">react</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/04/webpack-es6-react搭建项目/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-react-Component-PureComponent" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -867,7 +1023,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">react</a>
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -875,7 +1031,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+                <a href="javascript:void(0)" class="js-tag color1">react</a>
               </li>
              
               <li class="article-tag-list-item">
