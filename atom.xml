@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.lhgcool.club/"/>
-  <updated>2018-07-05T13:43:20.000Z</updated>
+  <updated>2018-07-05T14:19:35.000Z</updated>
   <id>http://www.lhgcool.club/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>webpack+es6+react搭建项目（4：环境分离）</title>
+    <link href="http://www.lhgcool.club/2018/07/05/webpack-es6-react%E6%90%AD%E5%BB%BA%E9%A1%B9%E7%9B%AE%EF%BC%88%E5%9B%9B%EF%BC%89/"/>
+    <id>http://www.lhgcool.club/2018/07/05/webpack-es6-react搭建项目（四）/</id>
+    <published>2018-07-05T13:53:51.000Z</published>
+    <updated>2018-07-05T14:19:35.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>搭建好开发环境后，就可以进行开发了。然而实际项目中，不同环境有着不同的构建需求。这里将开发环境和生产环境的配单独提取出来，并做一些简单的优化。<br><strong>1. 分离不同环境共有配置</strong><br>这里讲不同环境的共有配置抽离出来，单独配置。<br>安装<code>webpack-merge</code>(用于合并配置)、<code>uglifyjs-webpack-plugin</code>(js代码压缩，这里单独提取来控制版本)和<code>rimraf</code>(跨平台删除工具)<br><code>npm install webpack-merge uglifyjs-webpack-plugin rimraf --save-dev</code><br>配置共有配置<code>webpack.config.js</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p><p>配置开发环境<code>webpack.dev.config.js</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;搭建好开发环境后，就可以进行开发了。然而实际项目中，不同环境有着不同的构建需求。这里将开发环境和生产环境的配单独提取出来，并做一些简单的优化。&lt;br&gt;&lt;strong&gt;1. 分离不同环境共有配置&lt;/strong&gt;&lt;br&gt;这里讲不同环境的共有配置抽离出来，单独配置。&lt;br&gt;安装
+      
+    
+    </summary>
+    
+    
+      <category term="react" scheme="http://www.lhgcool.club/tags/react/"/>
+    
+  </entry>
   
   <entry>
     <title>webpack+es6+react搭建项目（3：相关配置）</title>

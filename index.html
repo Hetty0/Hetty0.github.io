@@ -182,6 +182,81 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-webpack-es6-react搭建项目（四）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/05/webpack-es6-react搭建项目（四）/">webpack+es6+react搭建项目（4：环境分离）</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/05/webpack-es6-react搭建项目（四）/" class="archive-article-date">
+  	<time datetime="2018-07-05T13:53:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>搭建好开发环境后，就可以进行开发了。然而实际项目中，不同环境有着不同的构建需求。这里将开发环境和生产环境的配单独提取出来，并做一些简单的优化。<br><strong>1. 分离不同环境共有配置</strong><br>这里讲不同环境的共有配置抽离出来，单独配置。<br>安装<code>webpack-merge</code>(用于合并配置)、<code>uglifyjs-webpack-plugin</code>(js代码压缩，这里单独提取来控制版本)和<code>rimraf</code>(跨平台删除工具)<br><code>npm install webpack-merge uglifyjs-webpack-plugin rimraf --save-dev</code><br>配置共有配置<code>webpack.config.js</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<p>配置开发环境<code>webpack.dev.config.js</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">react</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/05/webpack-es6-react搭建项目（四）/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-webpack-es6-react搭建项目（三）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -921,101 +996,10 @@ var _hmt = _hmt || [];
 
 
   
-    <article id="post-关于如何修改博客主题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/14/关于如何修改博客主题/">关于hexo如何修改博客主题</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/14/关于如何修改博客主题/" class="archive-article-date">
-  	<time datetime="2017-08-14T11:43:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>hexo主题地址：<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a><br>hexo官网地址：<a href="https://hexo.io/" target="_blank" rel="noopener">https://hexo.io/</a><br>hexo git地址：<a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">https://github.com/hexojs/hexo</a></p>
-<p><strong>个人感觉不错的主题：</strong></p>
-<ul>
-<li>Anisina <a href="http://haojen.github.io/" target="_blank" rel="noopener">http://haojen.github.io/</a></li>
-<li>BlueLake <a href="http://chaoo.oschina.io/" target="_blank" rel="noopener">http://chaoo.oschina.io/</a></li>
-<li>Chan <a href="http://blog.sprabbit.com/hexo-theme-chan/" target="_blank" rel="noopener">http://blog.sprabbit.com/hexo-theme-chan/</a></li>
-<li>JSimple <a href="https://shuoit.net/" target="_blank" rel="noopener">https://shuoit.net/</a></li>
-<li>hexo-theme-yilia <a href="http://litten.me/" target="_blank" rel="noopener">http://litten.me/</a></li>
-</ul>
-        
-          <a class="article-more-a" href="/2017/08/14/关于如何修改博客主题/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/technology//" class="article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/14/关于如何修改博客主题/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 
 
