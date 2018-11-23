@@ -5,14 +5,14 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://www.lhgcool.club">
+  <link rel="dns-prefetch" href="http://yoursite.com">
   <title>webpack+es6+react搭建项目（4：环境分离） | My Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="搭建好开发环境后，就可以进行开发了。然而实际项目中，不同环境有着不同的构建需求。这里将开发环境和生产环境的配单独提取出来，并做一些简单的优化。1. 分离不同环境共有配置这里讲不同环境的共有配置抽离出来，单独配置。安装webpack-merge(用于合并配置)、uglifyjs-webpack-plugin(js代码压缩，这里单独提取来控制版本)和rimraf(跨平台删除工具)npm install">
 <meta name="keywords" content="react">
 <meta property="og:type" content="article">
 <meta property="og:title" content="webpack+es6+react搭建项目（4：环境分离）">
-<meta property="og:url" content="http://www.lhgcool.club/2018/07/05/webpack-es6-react搭建项目（四）/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/07/05/webpack-es6-react搭建项目（四）/index.html">
 <meta property="og:site_name" content="My Blog">
 <meta property="og:description" content="搭建好开发环境后，就可以进行开发了。然而实际项目中，不同环境有着不同的构建需求。这里将开发环境和生产环境的配单独提取出来，并做一些简单的优化。1. 分离不同环境共有配置这里讲不同环境的共有配置抽离出来，单独配置。安装webpack-merge(用于合并配置)、uglifyjs-webpack-plugin(js代码压缩，这里单独提取来控制版本)和rimraf(跨平台删除工具)npm install">
 <meta property="og:locale" content="zh-CN">
@@ -307,7 +307,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://www.lhgcool.club/2018/07/05/webpack-es6-react搭建项目（四）/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/05/webpack-es6-react搭建项目（四）/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -458,15 +458,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">react</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
               <li class="article-tag-list-item">

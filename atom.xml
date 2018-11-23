@@ -5,9 +5,9 @@
   <subtitle>不忘初心，方得始终</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://www.lhgcool.club/"/>
+  <link href="http://yoursite.com/"/>
   <updated>2018-07-05T14:19:35.000Z</updated>
-  <id>http://www.lhgcool.club/</id>
+  <id>http://yoursite.com/</id>
   
   <author>
     <name>Hetty</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>webpack+es6+react搭建项目（4：环境分离）</title>
-    <link href="http://www.lhgcool.club/2018/07/05/webpack-es6-react%E6%90%AD%E5%BB%BA%E9%A1%B9%E7%9B%AE%EF%BC%88%E5%9B%9B%EF%BC%89/"/>
-    <id>http://www.lhgcool.club/2018/07/05/webpack-es6-react搭建项目（四）/</id>
+    <link href="http://yoursite.com/2018/07/05/webpack-es6-react%E6%90%AD%E5%BB%BA%E9%A1%B9%E7%9B%AE%EF%BC%88%E5%9B%9B%EF%BC%89/"/>
+    <id>http://yoursite.com/2018/07/05/webpack-es6-react搭建项目（四）/</id>
     <published>2018-07-05T13:53:51.000Z</published>
     <updated>2018-07-05T14:19:35.000Z</updated>
     
@@ -35,14 +35,14 @@
     </summary>
     
     
-      <category term="react" scheme="http://www.lhgcool.club/tags/react/"/>
+      <category term="react" scheme="http://yoursite.com/tags/react/"/>
     
   </entry>
   
   <entry>
     <title>webpack+es6+react搭建项目（3：相关配置）</title>
-    <link href="http://www.lhgcool.club/2018/07/05/webpack-es6-react%E6%90%AD%E5%BB%BA%E9%A1%B9%E7%9B%AE%EF%BC%88%E4%B8%89%EF%BC%89/"/>
-    <id>http://www.lhgcool.club/2018/07/05/webpack-es6-react搭建项目（三）/</id>
+    <link href="http://yoursite.com/2018/07/05/webpack-es6-react%E6%90%AD%E5%BB%BA%E9%A1%B9%E7%9B%AE%EF%BC%88%E4%B8%89%EF%BC%89/"/>
+    <id>http://yoursite.com/2018/07/05/webpack-es6-react搭建项目（三）/</id>
     <published>2018-07-05T10:16:40.000Z</published>
     <updated>2018-07-05T13:43:20.000Z</updated>
     
@@ -61,14 +61,14 @@
     </summary>
     
     
-      <category term="react" scheme="http://www.lhgcool.club/tags/react/"/>
+      <category term="react" scheme="http://yoursite.com/tags/react/"/>
     
   </entry>
   
   <entry>
     <title>webpack+es6+react搭建项目（2：前端服务器+热加载）</title>
-    <link href="http://www.lhgcool.club/2018/07/04/webpack-es6-react%E6%90%AD%E5%BB%BA%E9%A1%B9%E7%9B%AE%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
-    <id>http://www.lhgcool.club/2018/07/04/webpack-es6-react搭建项目（二）/</id>
+    <link href="http://yoursite.com/2018/07/04/webpack-es6-react%E6%90%AD%E5%BB%BA%E9%A1%B9%E7%9B%AE%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
+    <id>http://yoursite.com/2018/07/04/webpack-es6-react搭建项目（二）/</id>
     <published>2018-07-04T05:17:22.000Z</published>
     <updated>2018-07-05T10:09:44.000Z</updated>
     
@@ -84,14 +84,14 @@
     </summary>
     
     
-      <category term="react" scheme="http://www.lhgcool.club/tags/react/"/>
+      <category term="react" scheme="http://yoursite.com/tags/react/"/>
     
   </entry>
   
   <entry>
     <title>webpack+es6+react搭建项目（1：基础）</title>
-    <link href="http://www.lhgcool.club/2018/07/04/webpack-es6-react%E6%90%AD%E5%BB%BA%E9%A1%B9%E7%9B%AE/"/>
-    <id>http://www.lhgcool.club/2018/07/04/webpack-es6-react搭建项目/</id>
+    <link href="http://yoursite.com/2018/07/04/webpack-es6-react%E6%90%AD%E5%BB%BA%E9%A1%B9%E7%9B%AE/"/>
+    <id>http://yoursite.com/2018/07/04/webpack-es6-react搭建项目/</id>
     <published>2018-07-04T03:18:34.000Z</published>
     <updated>2018-07-05T13:41:23.000Z</updated>
     
@@ -105,14 +105,14 @@
     </summary>
     
     
-      <category term="react" scheme="http://www.lhgcool.club/tags/react/"/>
+      <category term="react" scheme="http://yoursite.com/tags/react/"/>
     
   </entry>
   
   <entry>
     <title>react Component &amp;&amp; PureComponent</title>
-    <link href="http://www.lhgcool.club/2018/06/15/react-Component-PureComponent/"/>
-    <id>http://www.lhgcool.club/2018/06/15/react-Component-PureComponent/</id>
+    <link href="http://yoursite.com/2018/06/15/react-Component-PureComponent/"/>
+    <id>http://yoursite.com/2018/06/15/react-Component-PureComponent/</id>
     <published>2018-06-15T07:31:37.000Z</published>
     <updated>2018-06-15T07:55:19.000Z</updated>
     
@@ -125,17 +125,17 @@
     
     </summary>
     
-      <category term="技术" scheme="http://www.lhgcool.club/categories/technology/"/>
+      <category term="技术" scheme="http://yoursite.com/categories/technology/"/>
     
     
-      <category term="react" scheme="http://www.lhgcool.club/tags/react/"/>
+      <category term="react" scheme="http://yoursite.com/tags/react/"/>
     
   </entry>
   
   <entry>
     <title>react propTypes</title>
-    <link href="http://www.lhgcool.club/2018/06/14/react-propTypes/"/>
-    <id>http://www.lhgcool.club/2018/06/14/react-propTypes/</id>
+    <link href="http://yoursite.com/2018/06/14/react-propTypes/"/>
+    <id>http://yoursite.com/2018/06/14/react-propTypes/</id>
     <published>2018-06-14T06:17:50.000Z</published>
     <updated>2018-06-14T08:32:05.000Z</updated>
     
@@ -147,17 +147,17 @@
     
     </summary>
     
-      <category term="技术" scheme="http://www.lhgcool.club/categories/technology/"/>
+      <category term="技术" scheme="http://yoursite.com/categories/technology/"/>
     
     
-      <category term="react" scheme="http://www.lhgcool.club/tags/react/"/>
+      <category term="react" scheme="http://yoursite.com/tags/react/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://www.lhgcool.club/2018/06/13/hello-world/"/>
-    <id>http://www.lhgcool.club/2018/06/13/hello-world/</id>
+    <link href="http://yoursite.com/2018/06/13/hello-world/"/>
+    <id>http://yoursite.com/2018/06/13/hello-world/</id>
     <published>2018-06-13T09:10:05.000Z</published>
     <updated>2018-06-13T09:10:05.000Z</updated>
     
@@ -178,8 +178,8 @@
   
   <entry>
     <title>github修改username</title>
-    <link href="http://www.lhgcool.club/2018/06/13/github%E4%BF%AE%E6%94%B9username/"/>
-    <id>http://www.lhgcool.club/2018/06/13/github修改username/</id>
+    <link href="http://yoursite.com/2018/06/13/github%E4%BF%AE%E6%94%B9username/"/>
+    <id>http://yoursite.com/2018/06/13/github修改username/</id>
     <published>2018-06-13T08:04:59.000Z</published>
     <updated>2018-06-13T09:19:31.000Z</updated>
     
@@ -192,14 +192,14 @@
     </summary>
     
     
-      <category term="github" scheme="http://www.lhgcool.club/tags/github/"/>
+      <category term="github" scheme="http://yoursite.com/tags/github/"/>
     
   </entry>
   
   <entry>
     <title>markdown</title>
-    <link href="http://www.lhgcool.club/2018/05/21/markdown/"/>
-    <id>http://www.lhgcool.club/2018/05/21/markdown/</id>
+    <link href="http://yoursite.com/2018/05/21/markdown/"/>
+    <id>http://yoursite.com/2018/05/21/markdown/</id>
     <published>2018-05-21T03:47:43.000Z</published>
     <updated>2018-06-22T07:10:26.000Z</updated>
     
@@ -214,17 +214,17 @@
     
     </summary>
     
-      <category term="技术" scheme="http://www.lhgcool.club/categories/technology/"/>
+      <category term="技术" scheme="http://yoursite.com/categories/technology/"/>
     
     
-      <category term="markdown" scheme="http://www.lhgcool.club/tags/markdown/"/>
+      <category term="markdown" scheme="http://yoursite.com/tags/markdown/"/>
     
   </entry>
   
   <entry>
     <title>关于angular material的一点东西</title>
-    <link href="http://www.lhgcool.club/2017/08/16/%E5%85%B3%E4%BA%8Eangular-material%E7%9A%84%E4%B8%80%E7%82%B9%E4%B8%9C%E8%A5%BF/"/>
-    <id>http://www.lhgcool.club/2017/08/16/关于angular-material的一点东西/</id>
+    <link href="http://yoursite.com/2017/08/16/%E5%85%B3%E4%BA%8Eangular-material%E7%9A%84%E4%B8%80%E7%82%B9%E4%B8%9C%E8%A5%BF/"/>
+    <id>http://yoursite.com/2017/08/16/关于angular-material的一点东西/</id>
     <published>2017-08-16T09:44:46.000Z</published>
     <updated>2018-06-13T09:10:05.000Z</updated>
     
@@ -239,17 +239,17 @@
     
     </summary>
     
-      <category term="技术" scheme="http://www.lhgcool.club/categories/technology/"/>
+      <category term="技术" scheme="http://yoursite.com/categories/technology/"/>
     
     
-      <category term="angular-material" scheme="http://www.lhgcool.club/tags/angular-material/"/>
+      <category term="angular-material" scheme="http://yoursite.com/tags/angular-material/"/>
     
   </entry>
   
   <entry>
     <title>关于hexo如何修改博客主题</title>
-    <link href="http://www.lhgcool.club/2017/08/14/%E5%85%B3%E4%BA%8E%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/"/>
-    <id>http://www.lhgcool.club/2017/08/14/关于如何修改博客主题/</id>
+    <link href="http://yoursite.com/2017/08/14/%E5%85%B3%E4%BA%8E%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/"/>
+    <id>http://yoursite.com/2017/08/14/关于如何修改博客主题/</id>
     <published>2017-08-14T11:43:11.000Z</published>
     <updated>2018-06-13T09:10:05.000Z</updated>
     
@@ -269,10 +269,10 @@
     
     </summary>
     
-      <category term="技术" scheme="http://www.lhgcool.club/categories/technology/"/>
+      <category term="技术" scheme="http://yoursite.com/categories/technology/"/>
     
     
-      <category term="hexo" scheme="http://www.lhgcool.club/tags/hexo/"/>
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
