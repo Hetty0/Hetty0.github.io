@@ -182,6 +182,89 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-git-stash" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/23/git-stash/">git stash</a>
+    </h1>
+  
+
+        
+        <a href="/2018/11/23/git-stash/" class="archive-article-date">
+  	<time datetime="2018-11-23T07:02:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h5 id="适用场景："><a href="#适用场景：" class="headerlink" title="适用场景："></a>适用场景：</h5><p>&nbsp;&nbsp;&nbsp;&nbsp;在当前分支开发，此时其他分支出现bug需要马上修改，当前分支的代码未完成，不想提交到远程仓库时，可以使用 <code>git stash</code> 将当前的工作区缓存起来，然后切换到修复bug的分支，当修复完bug后，再切回原来的分支，使用 <code>git stash pop</code> 将工作区恢复。</p>
+<p>注意：stash 不区分分支</p>
+<h4 id="用法："><a href="#用法：" class="headerlink" title="用法："></a>用法：</h4><ol>
+<li><code>git stash list</code> : 查看所有 stash</li>
+<li><code>git stash</code> : 保存一条 stash</li>
+<li><code>git stash save &quot;[message]&quot;</code> : 保存一条stash，并给此stash添加描述信息（<code>[]</code>内为描述信息）</li>
+<li><code>git stash pop</code> : 检出最新的一条stash，并将其从 stash list 中清除</li>
+<li><code>git stash apply stash@{[num]}</code> : 检出指定的一条 stash（<code>[]</code>内为 stash 的标志数字，表示第几条 stash）</li>
+<li><code>git stash drop stash@{[num]}</code> : 删除指定的一条 stash（<code>[]</code>内为 stash 的标志数字，表示第几条 stash）</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/11/23/git-stash/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-webpack-es6-react搭建项目（四）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -905,97 +988,6 @@ var _hmt = _hmt || [];
 
 
   
-    <article id="post-关于angular-material的一点东西" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/16/关于angular-material的一点东西/">关于angular material的一点东西</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/16/关于angular-material的一点东西/" class="archive-article-date">
-  	<time datetime="2017-08-16T09:44:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="md-select"><a href="#md-select" class="headerlink" title="md-select"></a>md-select</h3><p>当使用ng-repeat时，如果为一般数组时，可以使用一下代码：<br><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">ng-controller</span>=<span class="string">"MyCtrl"</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">md-select</span> <span class="attr">ng-model</span>=<span class="string">"selectedUser"</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">md-option</span> <span class="attr">ng-value</span>=<span class="string">"user"</span> <span class="attr">ng-repeat</span>=<span class="string">"user in users"</span>&gt;</span></span><span class="template-variable">&#123;&#123; user.name &#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">md-option</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;/<span class="name">md-select</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure></p>
-<p>如果数组里为对象时，就要添加ng-model-options属性。</p>
-<pre><code>&lt;div ng-controller=&quot;MyCtrl&quot;&gt;
-    &lt;md-select ng-model=&quot;selectedUser&quot; ng-model-options=&quot;{trackBy: &apos;$value.id&apos;}&quot;&gt;
-        &lt;md-option ng-value=&quot;user&quot; ng-repeat=&quot;user in users&quot;&gt;{{ user.name }}&lt;/md-option&gt;
-    &lt;/md-select&gt;
-&lt;/div&gt;
-</code></pre>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">angular-material</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/technology//" class="article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/16/关于angular-material的一点东西/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1089,15 +1081,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">react</a>
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+                <a href="javascript:void(0)" class="js-tag color1">react</a>
               </li>
              
               <li class="article-tag-list-item">

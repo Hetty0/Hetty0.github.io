@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-05T14:19:35.000Z</updated>
+  <updated>2018-11-23T07:19:44.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git stash</title>
+    <link href="http://yoursite.com/2018/11/23/git-stash/"/>
+    <id>http://yoursite.com/2018/11/23/git-stash/</id>
+    <published>2018-11-23T07:02:44.000Z</published>
+    <updated>2018-11-23T07:19:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="适用场景："><a href="#适用场景：" class="headerlink" title="适用场景："></a>适用场景：</h5><p>&nbsp;&nbsp;&nbsp;&nbsp;在当前分支开发，此时其他分支出现bug需要马上修改，当前分支的代码未完成，不想提交到远程仓库时，可以使用 <code>git stash</code> 将当前的工作区缓存起来，然后切换到修复bug的分支，当修复完bug后，再切回原来的分支，使用 <code>git stash pop</code> 将工作区恢复。</p><p>注意：stash 不区分分支</p><h4 id="用法："><a href="#用法：" class="headerlink" title="用法："></a>用法：</h4><ol><li><code>git stash list</code> : 查看所有 stash</li><li><code>git stash</code> : 保存一条 stash</li><li><code>git stash save &quot;[message]&quot;</code> : 保存一条stash，并给此stash添加描述信息（<code>[]</code>内为描述信息）</li><li><code>git stash pop</code> : 检出最新的一条stash，并将其从 stash list 中清除</li><li><code>git stash apply stash@{[num]}</code> : 检出指定的一条 stash（<code>[]</code>内为 stash 的标志数字，表示第几条 stash）</li><li><code>git stash drop stash@{[num]}</code> : 删除指定的一条 stash（<code>[]</code>内为 stash 的标志数字，表示第几条 stash）</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;适用场景：&quot;&gt;&lt;a href=&quot;#适用场景：&quot; class=&quot;headerlink&quot; title=&quot;适用场景：&quot;&gt;&lt;/a&gt;适用场景：&lt;/h5&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;在当前分支开发，此时其他分支出现bug需要马上修改，当前分支的代码未
+      
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>webpack+es6+react搭建项目（4：环境分离）</title>
