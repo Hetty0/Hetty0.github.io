@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-11-23T07:19:44.000Z</updated>
+  <updated>2018-11-23T07:54:53.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>git branch</title>
+    <link href="http://yoursite.com/2018/11/23/git-branch/"/>
+    <id>http://yoursite.com/2018/11/23/git-branch/</id>
+    <published>2018-11-23T07:24:41.000Z</published>
+    <updated>2018-11-23T07:54:53.000Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li><code>git branch -a</code>  列出所有分支，包括本地和远程分支</li><li><code>git branch</code>  列出本地分支</li><li><code>git branch [newBranchName]</code>  创建新分支</li><li><code>git checkout -b [newBranchName]</code> 创建并切换到新分支</li><li><code>git checkout [branchName]</code>  切换到某个分支</li><li><code>git branch -d [branchName]</code>  删除分支</li><li><code>git push origin [branchName]</code>  将本地分支推向远程</li><li><code>git push origin :[branchName]</code>  删除远程分支<a id="more"></a></li><li><code>git push origin [localBranchName]:[remoteBranchName]</code>  若 remoteBranchName 不存在，则在远程自动创建分支；若 localBranchName 不存在，则删除远程分支。localBranchName  为本地存在的分支，remoteBranchName 为远程分支</li><li><code>git merge [branchName]</code>  将分支合并到当前分支</li><li><code>git branch -m [oldBranchName] [newBranchName]</code>  本地分支重命名</li><li>远程分支重命名：<ol><li><code>git branch -m [oldBranchName] [newBranchName]</code>  首先本地分支重命名</li><li><code>git push origin :[oldBranchName]</code>  删除远程分支</li><li><code>git push origin [newBranchName]:[newBranchName]</code>  将本地新命名分支推向远程</li></ol></li><li><code>git branch -vv</code>  本地分支和服务器分支的映射关系</li><li><code>git reflog --date=local | grep [branchName]</code>  查看分支的父分支</li><li><code>git branch --set-upstream-to=origin/[remoteBranchName] [localBranchName]</code>  将本地分支和远程分支关联起来</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;&lt;code&gt;git branch -a&lt;/code&gt;  列出所有分支，包括本地和远程分支&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git branch&lt;/code&gt;  列出本地分支&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git branch [newBranchName]&lt;/code&gt;  创建新分支&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git checkout -b [newBranchName]&lt;/code&gt; 创建并切换到新分支&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git checkout [branchName]&lt;/code&gt;  切换到某个分支&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git branch -d [branchName]&lt;/code&gt;  删除分支&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git push origin [branchName]&lt;/code&gt;  将本地分支推向远程&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git push origin :[branchName]&lt;/code&gt;  删除远程分支
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
     <title>git stash</title>
     <link href="http://yoursite.com/2018/11/23/git-stash/"/>
     <id>http://yoursite.com/2018/11/23/git-stash/</id>
     <published>2018-11-23T07:02:44.000Z</published>
-    <updated>2018-11-23T07:19:44.000Z</updated>
+    <updated>2018-11-23T07:54:04.000Z</updated>
     
     <content type="html"><![CDATA[<h5 id="适用场景："><a href="#适用场景：" class="headerlink" title="适用场景："></a>适用场景：</h5><p>&nbsp;&nbsp;&nbsp;&nbsp;在当前分支开发，此时其他分支出现bug需要马上修改，当前分支的代码未完成，不想提交到远程仓库时，可以使用 <code>git stash</code> 将当前的工作区缓存起来，然后切换到修复bug的分支，当修复完bug后，再切回原来的分支，使用 <code>git stash pop</code> 将工作区恢复。</p><p>注意：stash 不区分分支</p><h4 id="用法："><a href="#用法：" class="headerlink" title="用法："></a>用法：</h4><ol><li><code>git stash list</code> : 查看所有 stash</li><li><code>git stash</code> : 保存一条 stash</li><li><code>git stash save &quot;[message]&quot;</code> : 保存一条stash，并给此stash添加描述信息（<code>[]</code>内为描述信息）</li><li><code>git stash pop</code> : 检出最新的一条stash，并将其从 stash list 中清除</li><li><code>git stash apply stash@{[num]}</code> : 检出指定的一条 stash（<code>[]</code>内为 stash 的标志数字，表示第几条 stash）</li><li><code>git stash drop stash@{[num]}</code> : 删除指定的一条 stash（<code>[]</code>内为 stash 的标志数字，表示第几条 stash）</li></ol>]]></content>
     
