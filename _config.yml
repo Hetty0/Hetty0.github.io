@@ -13,7 +13,7 @@ timezone: Asia/Shanghai    ## 定义网站的时区
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.lhgcool.club  ## 定义网站访问的域名
+# url: http://www.lhgcool.club  ## 定义网站访问的域名
 root: /   ## 定义所在Web文件夹在哪个目录下
 permalink: :year/:month/:day/:title/  ## 定义时间格式
 permalink_defaults:
